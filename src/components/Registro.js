@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import Concepto from './Concepto';
 import Trabajos from './Trabajos';
 import { jsPDF } from "jspdf";
@@ -157,6 +157,8 @@ const Registro = () =>{
             case 7:
                 nombreDia = "Domingo";
             break;
+            default:
+                nombreDia = "";
         }
         return nombreDia;
     }
