@@ -228,7 +228,7 @@ const Registro = () =>{
         pdf.text("TRABAJOS REALIZADOS", 2, 74);
         pdf.text("SI", 85, 74);
         pdf.text("NO", 98, 74);
-        var positionTrabajos = 80;
+      /*  var positionTrabajos = 80;
         var positionRea = 77;
         listTrabajos.map(trabajo =>{ 
             pdf.text(trabajo.nombre, 2, positionTrabajos)
@@ -244,7 +244,7 @@ const Registro = () =>{
             positionTrabajos += 5;
             positionRea += 5;
             }
-        )
+        )*/
         /*Concepto */
         pdf.setFillColor(0);
         pdf.rect(123, 71, 82, 5, "F");
@@ -255,13 +255,13 @@ const Registro = () =>{
         pdf.setTextColor(0);
         var position = 76;
         let totalConceptos = (listConceptos.length+1);
-        listConceptos.map(concepto => {
+        /*listConceptos.map(concepto => {
             pdf.rect(123, position, 17, 5);
             pdf.text(concepto.cantidad, 125, (position+4));
             pdf.rect(140, position, 65, 5);
             pdf.text(concepto.descripcion, 142, (position+4));
             position += 5;    
-        })
+        })*/
         for(var x=totalConceptos; x<=17; x++){
         pdf.rect(123, position, 17, 5);
         pdf.rect(140, position, 65, 5);
